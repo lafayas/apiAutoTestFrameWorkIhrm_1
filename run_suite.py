@@ -21,7 +21,7 @@ init_log_config(BASE_DIR + "/log/ihrm.log")
 suite = unittest.TestSuite()
 
 # print("测试套件实例, 创建成功!")
-logging.info("测试套件实例, 创建成功!")
+# logging.info("测试套件实例, 创建成功!")
 
 # 2. 添加 测试类, 组装测试用例
 suite.addTest(unittest.makeSuite(TestIhrmLoginParams))
@@ -34,4 +34,5 @@ runner = HTMLTestReport(BASE_DIR + "/report/ihrm.html", description="描述", ti
 # 4. runner 调用 run(), 传入 suite
 runner.run(suite)
 # print("测试报告生成成功!")
+
 logging.info("ihrm.html 测试报告 生成 成功!")
